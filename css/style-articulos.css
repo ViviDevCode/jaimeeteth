@@ -1,0 +1,352 @@
+.icono_contacto,
+.icono_contacto_tel,
+.icono_contacto_lin {
+  color: var(--color-principal);
+  transition: color 0.35s ease;
+}
+
+.icono_contacto:hover {
+  color: var(--color-principal-2);
+}
+
+.icono_contacto_tel:hover,
+.icono_contacto_lin:hover {
+  color: var(--color-principal-2);
+}
+
+#nav-tab {
+  background: rgba(58, 14, 86, 0.92);
+  border-radius: 20px;
+  padding: 0.35rem;
+}
+
+.SubTitulos {
+  color: var(--color-subtitulos);
+  font-size: 0.85rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+}
+
+.Titulo {
+  color: var(--color-titulos);
+  font-size: 1.4rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.TituloQuienSoy {
+  color: var(--color-titulos);
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.SubTitulosQuienSoy {
+  color: var(--color-subtitulos);
+  font-size: 1.2rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 500;
+}
+
+.ParrafoQuienSoy {
+  color: var(--color-subtitulos);
+  font-size: 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+  max-width: 680px;
+}
+
+.proyRemeras,
+.proyAutos,
+.proyBlog {
+  background-position: center;
+  background-size: cover;
+  border-radius: 22px;
+  filter: brightness(0.7);
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.proyRemeras:hover,
+.proyAutos:hover,
+.proyBlog:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: brightness(0.86);
+}
+
+.proyRemeras {
+  background-image: linear-gradient(135deg, rgba(64, 0, 160, 0.85), rgba(17, 24, 39, 0.9)), url("../img/proyectos/proyecto_1.jpg");
+}
+
+.proyAutos {
+  background-image: linear-gradient(135deg, rgba(0, 96, 115, 0.85), rgba(14, 23, 39, 0.9)), url("../img/proyectos/proyecto_2.jpg");
+}
+
+.proyBlog {
+  background-image: linear-gradient(135deg, rgba(80, 0, 100, 0.85), rgba(8, 10, 23, 0.9)), url("../img/proyectos/blog_personal.jpg");
+}
+
+.nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--color-titulos) !important;
+  background-color: transparent !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background: linear-gradient(135deg, var(--color-principal), var(--color-principal-2)) !important;
+  border-color: transparent !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+  border-color: rgba(198, 161, 91, 0.65) !important;
+}
+
+p {
+  color: var(--color-subtitulos);
+  font-size: 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 300;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#sobreMi,
+#habilidades,
+#videos,
+#contacto {
+  padding-top: 5rem;
+}
+
+.sobreMi-data {
+  padding-left: 3rem;
+}
+
+.sobreMi-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.sobreMi-info-box {
+  padding-inline: 1rem;
+}
+
+.img-sobreMi-estilo {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.contact__icon {
+  color: var(--color-principal);
+  font-size: 1.5rem;
+}
+
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: rgba(198, 161, 91, 0.14);
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+.contact-panel {
+  display: flex;
+  gap: 2rem;
+  background: rgba(23, 24, 26, 0.82);
+  border: 1px solid rgba(198, 161, 91, 0.10);
+  border-radius: 32px;
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.24);
+  padding: 2rem;
+}
+
+.contact-sidebar {
+  min-width: 280px;
+}
+
+.contact-box {
+  background: rgba(245, 241, 232, 0.03);
+  border: 1px solid rgba(198, 161, 91, 0.10);
+  border-radius: 22px;
+  padding: 1.15rem 1rem;
+}
+
+.contact__form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact__fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact__content {
+  background: rgba(245, 241, 232, 0.04);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 1.2rem 1rem;
+}
+
+.contact__name,
+.contact__email,
+.contact__msg {
+  border: none;
+  background: transparent;
+  color: var(--color-titulos);
+  font-size: 0.95rem;
+  font-family: var(--fuente-titulos);
+  outline: none;
+  width: 100%;
+}
+
+.contact__msg {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact-panel {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar {
+    min-width: auto;
+  }
+
+  .contact-box {
+    padding: 1rem;
+  }
+}
+
+a.Links {
+  color: var(--color-subtitulos);
+}
+
+a.Links:hover {
+  color: var(--color-principal-2);
+}
+
+.project-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(7, 8, 22, 0.82) 100%);
+  pointer-events: none;
+}
+
+.video-card-link {
+  position: relative;
+  display: block;
+}
+
+.video-preview-card {
+  flex: 1 1 320px;
+  max-width: 440px;
+  width: min(100%, 440px);
+}
+
+.video-card-thumb {
+  width: 100%;
+  padding-bottom: 177.78%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.video-card-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: rgba(23, 24, 26, 0.9);
+  color: var(--color-titulos);
+  font-size: 1.35rem;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(198, 161, 91, 0.18);
+  pointer-events: none;
+}
+
+.video-card-thumb::after {
+  content: 'Ver en YouTube';
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(23, 24, 26, 0.88);
+  color: var(--color-titulos);
+  font-size: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 161, 91, 0.16);
+}
+
+.project-card .project-label {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-card .project-label button {
+  min-width: 3.1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+  .contact-panel {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact__fields {
+    grid-template-columns: 1fr;
+  }
+}
+

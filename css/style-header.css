@@ -1,0 +1,63 @@
+.circuloPerfil {
+  background-image: linear-gradient(to bottom, rgba(198, 161, 91, 0.22), var(--color-fondo));
+  height: 100%;
+  width: 105px;
+}
+
+.circuloPerfilGrande {
+  background-image: linear-gradient(to bottom, rgba(198, 161, 91, 0.22), var(--color-fondo));
+  width: 265px;
+  height: auto;
+}
+
+.Nombre {
+  color: var(--color-titulos);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.Trabajo {
+  color: var(--color-subtitulos);
+  font-size: 0.90rem;
+  font-family: var(--fuente-titulos);
+  margin-top: -0.45rem;
+}
+
+.Paneles {
+  background-color: var(--color-panel);
+}
+
+i {
+  color: var(--color-subtitulos);
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: var(--color-principal-2);
+}
+
+.TituloBrand {
+  color: var(--color-titulos);
+  font-size: 1.05rem;
+  font-family: var(--fuente-titulos);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.TituloBrand:hover {
+  color: var(--color-principal-2);
+}
+
+.TitulosNav {
+  color: var(--color-subtitulos);
+  font-size: 0.95rem;
+  font-family: var(--fuente-titulos);
+  margin: 0px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.TitulosNav:hover {
+  color: var(--color-principal-2);
+}
+
